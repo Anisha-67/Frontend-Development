@@ -2,7 +2,8 @@
 
 Digital Clock:
 
-In this project, i have  created a simple digital clock that displays the current time in hours,minutes, and seconds, updating every second. 
+In this project, i have  created a simple digital clock that displays the current time in hours,minutes, and seconds, updating every second.
+This is built using HTML,CSS,Javascript.
 This project helped me understand the basics of JavaScript for dynamic updates and CSS for styling a user interface. 
 It’s a great introduction to working with the Date object, setInterval function, and basic DOM manipulation.
 
