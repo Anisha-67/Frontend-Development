@@ -1,0 +1,109 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at center, #1a1a2e, #16213e);
+    color: #ffffff;
+}
+
+.clock-container {
+    padding: 40px 60px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+
+.clock {
+    font-size: 4.5rem;
+    color: #00f9ff;
+    text-shadow: 0 0 15px #00f9ff, 0 0 30px #00f9ff;
+    margin-bottom: 15px;
+}
+
+
+.date {
+    font-size: 1.5rem;
+    color: #d0eaff;
+    text-shadow: 0 0 5px #00f9ff;
+    margin-bottom: 25px;
+}
+
+
+button#toggleFormat {
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1a1a2e;
+    background: #00f9ff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 15px rgba(0, 249, 255, 0.4);
+}
+
+button#toggleFormat:hover {
+    background: #0dd;
+    transform: translateY(-2px);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+body.dark-theme {
+    background: radial-gradient(circle at center, #1a1a2e, #16213e);
+    color: #ffffff;
+}
+
+body.light-theme {
+    background: linear-gradient(135deg, #ffffff, #e0f7fa);
+    color: #111;
+}
+
+.light-theme .clock-container {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: #111;
+}
+
+.light-theme .clock {
+    color: #0d47a1;
+    text-shadow: none;
+}
+
+.light-theme .date {
+    color: #333;
+    text-shadow: none;
+}
+
+.light-theme button {
+    background: #0d47a1;
+    color: #ffffff;
+}
+
+.light-theme button:hover {
+    background: #1565c0;
+}
